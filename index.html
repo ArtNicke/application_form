@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+
+    <title>Feedback Questionnaire</title>
+</head>
+
+<body>
+    <form action="https://example.com/submit" method="post">
+        <h1>Feedback Questionnaire</h1>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="date_of_birth">Date of Birth:</label><br>
+        <input type="date" id="date_of_birth" name="date_of_birth" required><br><br>
+
+        <h2>Feedback Questions</h2>
+
+        <label for="question1">1. How would you rate the quality of our service?</label><br>
+        <input type="radio" id="question1" name="question1" value="Excellent"> Excellent
+        <input type="radio" id="question1" name="question1" value="Good"> Good
+        <input type="radio" id="question1" name="question1" value="Average"> Average
+        <input type="radio" id="question1" name="question1" value="Poor"> Poor
+        <br><br>
+
+        <label for="question2">2. What did you like most about our service?</label><br>
+        <textarea id="question2" name="question2" rows="4" required></textarea><br><br>
+
+        <label for="question3">3. What suggestions do you have to improve our service?</label><br>
+        <textarea id="question3" name="question3" rows="4" required></textarea><br><br>
+
+        <label for="question4">4. What is your opinion on the ease of use of our website?</label><br>
+        <input type="radio" id="question4" name="question4" value="Very Easy"> Very Easy
+        <input type="radio" id="question4" name="question4" value="Easy"> Easy
+        <input type="radio" id="question4" name="question4" value="Moderate"> Moderate
+        <input type="radio" id="question4" name="question4" value="Difficult"> Difficult
+        <br><br>
+
+        <label for="question5">5. What additional features would you like to see on our website?</label><br>
+        <textarea id="question5" name="question5" rows="4" required></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
